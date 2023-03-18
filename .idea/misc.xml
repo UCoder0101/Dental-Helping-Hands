@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../AndroidSDK/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.3265625" />
+        <entry key="../../../../../layout/custom_preview.xml" value="0.3453703703703704" />
+        <entry key="app/src/main/res/drawable-v21/day_item_background.xml" value="0.1915" />
+        <entry key="app/src/main/res/drawable-v21/day_picker_item_background.xml" value="0.1915" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/background_color_circle_selector.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/background_transparent.xml" value="0.1355" />
+        <entry key="app/src/main/res/drawable/button_background.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/button_press.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/checkbox_selector.xml" value="0.1475" />
+        <entry key="app/src/main/res/drawable/day_item_background.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/day_picker_item_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/shape_checkbox.xml" value="0.1875" />
+        <entry key="app/src/main/res/drawable/shape_rect_bg_spinner_item.xml" value="0.115" />
+        <entry key="app/src/main/res/drawable/shape_rect_bg_spinner_item_selected.xml" value="0.1595" />
+        <entry key="app/src/main/res/drawable/shape_rect_bg_toolbar.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/shape_rect_bg_toolbar_home.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_bottom.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_box.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shape_rect_button_1.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/shape_rect_button_2.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_button_3.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_circle.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_cursor.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/shape_rect_edittext.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/shape_rect_edittext_focus.xml" value="0.296" />
+        <entry key="app/src/main/res/drawable/shape_rect_edittext_un_focus.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/shape_rect_edittext_unfocus.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/shape_rect_round.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/shape_rect_top.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/shape_rect_white_top_radius.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/show_password_selector.xml" value="0.141" />
+        <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_contact_us.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_dental_office_forgot_password.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_dental_office_sign_in.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_dental_office_sign_up.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_dentist_location.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_flow_type.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_link.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/activity_my_listing.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_my_profile.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_notification.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_notification_detail.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_office_forgot_password.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_office_my_listing.xml" value="0.2902777777777778" />
+        <entry key="app/src/main/res/layout/activity_office_my_profile.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_office_notification.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_notification_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_post_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_post_edit.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_post_job.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_office_select_date.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_office_sign_in.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_office_sign_up.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_post_ajob.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_post_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_post_edit.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_post_job.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_practices_dental.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_previous_work.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_previous_work_detail.xml" value="0.32153846153846155" />
+        <entry key="app/src/main/res/layout/activity_professional_forgot_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_professional_home.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_professional_my_profile.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_professional_notification.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_professional_notification_detail.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_professional_previous_work.xml" value="0.2902777777777778" />
+        <entry key="app/src/main/res/layout/activity_professional_previous_work_detail.xml" value="0.2902777777777778" />
+        <entry key="app/src/main/res/layout/activity_professional_sign_in.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_professional_sign_up.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_professsional_detail.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_select_date.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/calendar_view.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/calendar_view_day.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/calendar_view_grid.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/calendar_view_picker_day.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/content_availability.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/content_empty_text.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/content_toolbar.xml" value="0.244921875" />
+        <entry key="app/src/main/res/layout/content_toolbar_home.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/custom_navigation_drawer.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/cv_layout_calendar_view.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/cv_week_bar.xml" value="0.16111111111111112" />
+        <entry key="app/src/main/res/layout/date_picker_dialog.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/dialog_approve.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/dialog_logout.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/dialog_time_picker.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/fragment_office_home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_office_notification.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/fragment_professional_home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_test.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/fragment_test2.xml" value="0.2935185185185185" />
+        <entry key="app/src/main/res/layout/list_professional_item.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/my_navigation_drawer.xml" value="0.16203703703703703" />
+        <entry key="app/src/main/res/layout/office_navigation_drawer.xml" value="0.2552674230145867" />
+        <entry key="app/src/main/res/layout/popup_approve.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/professional_navigation_drawer.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/row_availability_item.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/row_my_listing_item.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/row_notification_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/row_office_my_listing_item.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/row_office_notification_item.xml" value="0.3265625" />
+        <entry key="app/src/main/res/layout/row_previous_work_item.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/row_professional_availability_item.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/row_professional_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/row_professional_notification_item.xml" value="0.3255208333333333" />
+        <entry key="app/src/main/res/layout/row_professional_previous_work_item.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/row_spinner_item.xml" value="0.3265625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2075" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2075" />
+        <entry key="customnavigationdrawer2/src/main/res/drawable/avd_pathmorph_drawer_arrow_to_hamburger.xml" value="0.21" />
+        <entry key="customnavigationdrawer2/src/main/res/drawable/avd_pathmorph_drawer_hamburger_to_arrow.xml" value="0.21" />
+        <entry key="customnavigationdrawer2/src/main/res/drawable/vd_pathmorph_drawer_arrow.xml" value="0.21" />
+        <entry key="customnavigationdrawer2/src/main/res/drawable/vd_pathmorph_drawer_hamburger.xml" value="0.21" />
+        <entry key="customnavigationdrawer2/src/main/res/layout/menu_row_item.xml" value="0.3265625" />
+        <entry key="customnavigationdrawer2/src/main/res/layout/widget_navigation_drawer.xml" value="0.3265625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

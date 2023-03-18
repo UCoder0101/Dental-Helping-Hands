@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_length_username_email">40</integer>
+    <integer name="max_length_email">40</integer>
+    <integer name="max_length_password">16</integer>
+    <integer name="min_length_password">6</integer>
+    <integer name="max_length_name">50</integer>
+    <integer name="max_length_phone">15</integer>
+    <integer name="max_length_other">50</integer>
+    <integer name="max_length_price">10</integer>
+    <integer name="max_length_practice_address">50</integer>
+    <integer name="max_length_message">250</integer>
+    <integer name="max_length_description">250</integer>
+</resources>

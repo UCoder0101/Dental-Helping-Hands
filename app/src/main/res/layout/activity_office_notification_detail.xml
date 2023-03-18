@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context=".activities.office.OfficeNotificationDetailActivity">
+
+    <include
+        android:id="@+id/ilToolBar"
+        layout="@layout/content_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <LinearLayout
+                android:id="@+id/llProfileWithText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/_95sdp"
+                    android:layout_height="@dimen/_95sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_2"
+                    app:riv_corner_radius="@dimen/_8sdp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="Name"
+                    android:textSize="@dimen/_16ssp"
+                    app:fontFamily="@font/font_bold_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llScLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Sc License Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvSCLicenseNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGaLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Ga License Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvGaLicenseNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFlLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Fl License Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvFlLicenceNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNcLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Nc License Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvNCLicenceNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOtherLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Other License Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvOtherLicenseNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llYearPracticing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Years Practicing"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvYearPracticing"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="289465 198418651 41984168"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Availability"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvStartEndTime"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:singleLine="false"
+                    android:inputType="textMultiLine"
+                    tools:text="08:00 AM - 05:00 PM"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Phone Number"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="+1 (123) 456-7890"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Email Address"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvEmailAddress"
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="kitty.4656@gmail.com"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRequestPayRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:background="@drawable/shape_rect_top"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Requested Pay Rate"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvRequestPayRate"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/shape_rect_bottom"
+                    android:elevation="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    tools:text="Hourly"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_medium_montserrat" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

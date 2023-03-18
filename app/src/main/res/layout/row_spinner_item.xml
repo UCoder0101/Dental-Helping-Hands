@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_bg_spinner_item"
+    android:elevation="@dimen/_1sdp"
+    android:paddingStart="@dimen/_14sdp"
+    android:paddingTop="@dimen/_6sdp"
+    android:paddingEnd="@dimen/_14sdp"
+    android:paddingBottom="@dimen/_6sdp"
+    android:textSize="@dimen/_12ssp"
+    app:fontFamily="@font/font_medium_montserrat"
+    tools:text="@string/app_name" />

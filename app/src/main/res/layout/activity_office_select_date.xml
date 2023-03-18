@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context=".activities.office.OfficeSelectDateActivity">
+
+    <include
+        android:id="@+id/ilToolBar"
+        layout="@layout/content_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect_box"
+                android:orientation="vertical">
+
+                <!--                <com.applandeo.materialcalendarview.CalendarView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    app:firstDayOfWeek="sunday"-->
+                <!--                    app:todayLabelColor="@color/colorTextKeppel" />-->
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:daysLabelsColor="@color/colorTextCyanBlue"
+                    app:selectionColor="@color/colorAccent"
+                    app:selectionLabelColor="@color/colorTextWhite"
+                    app:todayLabelColor="@color/colorTextKeppel"
+                    app:type="many_days_picker" />
+
+                <View
+                    android:id="@+id/viewDummyBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/colorBgView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clOpens"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tvLblOpens"
+                            style="@style/MyTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_opens"
+                            android:textColor="@color/colorCadetGrey"
+                            android:textSize="@dimen/_12ssp"
+                            app:fontFamily="@font/font_bold_montserrat"
+                            app:layout_constraintEnd_toEndOf="@id/tvOpens"
+                            app:layout_constraintStart_toStartOf="@id/tvOpens"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvOpens"
+                            style="@style/MyTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textSize="@dimen/_17ssp"
+                            app:fontFamily="@font/font_bold_montserrat"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/ivOpensArrow"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvLblOpens"
+                            tools:text="8:15 AM" />
+
+                        <ImageView
+                            android:id="@+id/ivOpensArrow"
+                            android:layout_width="@dimen/_11sdp"
+                            android:layout_height="@dimen/_11sdp"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:src="@drawable/ic_arrow_down_cyan_blue"
+                            app:layout_constraintBottom_toBottomOf="@id/tvOpens"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvOpens"
+                            app:layout_constraintTop_toTopOf="@id/tvOpens"
+                            tools:ignore="ContentDescription,NewApi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clCloses"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?android:selectableItemBackground"
+                        android:paddingVertical="@dimen/_8sdp">
+
+
+                        <TextView
+                            android:id="@+id/tvLblCloses"
+                            style="@style/MyTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:text="@string/lbl_closes"
+                            android:textColor="@color/colorCadetGrey"
+                            android:textSize="@dimen/_12ssp"
+                            app:fontFamily="@font/font_bold_montserrat"
+                            app:layout_constraintEnd_toEndOf="@id/tvCloses"
+                            app:layout_constraintStart_toStartOf="@id/tvCloses"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvCloses"
+                            style="@style/MyTextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textSize="@dimen/_17ssp"
+                            app:fontFamily="@font/font_bold_montserrat"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/ivClosesArrow"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tvLblCloses"
+                            tools:text="05:30 PM" />
+
+                        <ImageView
+                            android:id="@+id/ivClosesArrow"
+                            android:layout_width="@dimen/_11sdp"
+                            android:layout_height="@dimen/_11sdp"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:src="@drawable/ic_arrow_down_cyan_blue"
+                            app:layout_constraintBottom_toBottomOf="@id/tvCloses"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvCloses"
+                            app:layout_constraintTop_toTopOf="@id/tvCloses"
+                            tools:ignore="ContentDescription,NewApi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/MyButtonStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/btn_next" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

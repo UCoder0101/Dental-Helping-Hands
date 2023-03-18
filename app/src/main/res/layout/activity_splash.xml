@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:orientation="vertical"
+    tools:context=".SplashActivity"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:src="@drawable/logo_splash"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="@string/lbl_dental"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/_30ssp"
+            app:fontFamily="@font/font_shink_rifki_7n_types" />
+
+        <TextView
+            style="@style/MyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/lbl_helping_hands"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/_30ssp"
+            app:fontFamily="@font/font_shink_rifki_7n_types" />
+    </LinearLayout>
+</LinearLayout>

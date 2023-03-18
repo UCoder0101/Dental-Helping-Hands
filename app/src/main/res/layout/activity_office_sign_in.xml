@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context=".activities.office.OfficeSignInActivity">
+
+    <include
+        android:id="@+id/ilToolBar"
+        layout="@layout/content_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/lbl_username_or_email_address"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etUserNameEmail"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hint_enter_username_or_email_address"
+                android:inputType="textEmailAddress"
+                android:maxLength="@integer/max_length_username_email"
+                android:nextFocusForward="@id/etPassword" />
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_password"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTextInputLayoutStyle"
+                android:layout_marginTop="@dimen/_6sdp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/MyEditTextStyle"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:autofillHints="password"
+                    android:background="@null"
+                    android:elevation="0dp"
+                    android:hint="@string/hint_enter_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="@integer/max_length_password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:background="?android:selectableItemBackground"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/link_forgot_password_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                style="@style/MyButtonStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/btn_sign_in" />
+
+            <!--<TextView
+                android:id="@+id/tvResendConfirm"
+                style="@style/MyTextViewStyle"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/lbl_resend_confirmation_link" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_do_not_have_an_account_" />
+
+                <TextView
+                    android:id="@+id/tvSignUp"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/link_sign_up"
+                    android:textColor="@color/colorKeppel1"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

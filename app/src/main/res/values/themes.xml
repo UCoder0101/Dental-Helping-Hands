@@ -1,0 +1,213 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.DentalHelpingHands" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="fontFamily">@font/font_regular_montserrat</item>
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Home" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="fontFamily">@font/font_regular_montserrat</item>
+        <!-- Status bar stuff. -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/font_shink_rifki_7n_types</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextCyanBlue</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">none</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_3sdp</item>
+        <item name="fontFamily">@font/font_regular_montserrat</item>
+    </style>
+
+    <style name="MyTextViewMultilineStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextCyanBlue</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_3sdp</item>
+        <item name="fontFamily">@font/font_regular_montserrat</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="android:style/Widget.Material.Button">
+        <item name="android:layout_width">match_parent</item>
+        <!--        <item name="android:layout_height">wrap_content</item>-->
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:textColor">@color/colorButtonTextWhite</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/shape_rect_button</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/font_semi_bold_montserrat</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+    </style>
+
+    <style name="MyButtonStyle1" parent="android:style/Widget.Material.Button">
+        <item name="android:layout_width">match_parent</item>
+        <!--        <item name="android:layout_height">wrap_content</item>-->
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:textColor">@color/colorTextKeppel</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/shape_rect_button_1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/font_semi_bold_montserrat</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+    </style>
+
+
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:background">@drawable/shape_rect_edittext_focus</item>-->
+        <item name="android:background">@drawable/shape_rect_edittext</item>
+        <!--        <item name="android:paddingStart">@dimen/_14sdp</item>-->
+        <!--        <item name="android:paddingEnd">@dimen/_14sdp</item>-->
+        <!--        <item name="android:paddingTop">@dimen/_16sdp</item>-->
+        <!--        <item name="android:paddingBottom">@dimen/_16sdp</item>-->
+        <item name="android:padding">@dimen/_14sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="fontFamily">@font/font_medium_montserrat</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textCursorDrawable">@drawable/shape_rect_cursor</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+    </style>
+
+    <style name="MyEditTextMultiLineStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:background">@drawable/shape_rect_edittext_focus</item>-->
+        <item name="android:background">@drawable/shape_rect_edittext</item>
+        <!--        <item name="android:paddingStart">@dimen/_14sdp</item>-->
+        <!--        <item name="android:paddingEnd">@dimen/_14sdp</item>-->
+        <!--        <item name="android:paddingTop">@dimen/_16sdp</item>-->
+        <!--        <item name="android:paddingBottom">@dimen/_16sdp</item>-->
+        <item name="android:padding">@dimen/_14sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="fontFamily">@font/font_medium_montserrat</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textCursorDrawable">@drawable/shape_rect_cursor</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">5</item>
+        <item name="android:gravity">start|top</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine|textCapSentences</item>
+        <item name="android:maxLength">@integer/max_length_description</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarStyle">insideInset</item>
+        <item name="android:overScrollMode">always</item>
+    </style>
+
+    <style name="MyTextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="passwordToggleEnabled">true</item>
+        <item name="hintEnabled">false</item>
+        <item name="passwordToggleTint">@color/colorHint</item>
+        <item name="passwordToggleDrawable">@drawable/show_password_selector</item>
+        <item name="android:elevation">@dimen/_1sdp</item>
+        <item name="android:background">@drawable/shape_rect_edittext</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="MyTimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorPrimary">@color/colorTextCyanBlue</item>
+        <item name="android:colorPrimaryDark">@color/colorTextCyanBlue</item>
+        <item name="android:colorAccent">@color/colorTextCyanBlue</item>
+        <!--        <item name="android:timePickerMode">spinner</item>-->
+        <item name="android:textColorPrimary">@color/colorTextCyanBlue
+        </item> <!-- color for digits -->
+        <item name="android:textColor">@color/colorTextCyanBlue</item> <!-- color for colon -->
+        <item name="android:colorControlNormal">@color/colorTextCyanBlue
+        </item> <!-- color for (horizontal) delimeters -->
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomAppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>

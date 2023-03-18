@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D034B1B0</color>
+    <color name="colorPrimaryDark">#35CBB1</color>
+    <color name="colorAccent">#22CBBD</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTextWhite">@color/colorWhite</color>
+    <color name="colorButtonTextWhite">@color/colorWhite</color>
+    <color name="colorHint">@color/colorKeppel1</color>
+    <color name="colorEditText">@color/colorKeppel1</color>
+    <color name="colorCyanBlue">#205072</color>
+    <color name="colorTextCyanBlue">@color/colorCyanBlue</color>
+    <color name="colorKeppel">#329D9C</color>
+    <color name="colorKeppel1">#00CDAC</color>
+    <color name="colorTextKeppel">@color/colorKeppel</color>
+    <color name="colorTop">#01CBAD</color>
+    <color name="colorBottom">#02AFB0</color>
+    <color name="colorBg">#1234B1B0</color>
+    <!--    <color name="colorBg">#2834B1B0</color>-->
+    <color name="colorBgMenu">#DFF9F5</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorTopHome">#01CCAD</color>
+    <color name="colorBottomHome">#02AEB0</color>
+    <color name="colorBgItem">#E8EDF1</color>
+    <color name="colorBgView">#BFD3D3D3</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorCadetGrey">#8FA7B8</color>
+    <color name="colorLightGray">#BED3D3D3</color>
+
+    <!--    Calendar view-->
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+
+    <color name="itemHighlightColor">#1F000000</color>
+    <color name="itemFocusedColor">#1A000000</color>
+
+    <color name="defaultColor">@color/colorWhite</color>
+</resources>

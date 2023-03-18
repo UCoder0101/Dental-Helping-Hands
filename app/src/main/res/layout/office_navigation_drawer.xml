@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgMenu"
+    tools:context=".activities.office.OfficeHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:elevation="@dimen/_1sdp"
+                    android:src="@drawable/logo_app"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/tvMenuNotification"
+                    style="@style/MyTextViewStyle"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_notification"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+
+                <TextView
+                    android:id="@+id/tvMenuMyProfile"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_my_profile"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvMenuPrivacy"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_privacy"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvMenuTC"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_terms_and_conditions"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvMenuAboutUs"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_about_us"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvMenuContactUs"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_contact_us"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvMenuLogout"
+                    style="@style/MyTextViewStyle"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/menu_logout"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerCV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorBgMenu"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/appBarRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/containerLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

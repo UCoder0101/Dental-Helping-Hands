@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.dentalhelpinghands.adapters.office.OfficeMyListingAdapter">
+
+    <View
+        android:id="@+id/viewDummyTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_8sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/shape_rect_top"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProfessional"
+                style="@style/MyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:text="Practice Dental"
+                android:textSize="@dimen/_15ssp"
+                app:fontFamily="@font/font_bold_montserrat" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                style="@style/MyTextViewStyle"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/shape_rect_circle"
+                android:gravity="center"
+                android:text="2"
+                app:fontFamily="@font/font_bold_montserrat" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/shape_rect_bottom"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tvOfficeAddress"
+                style="@style/MyTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_weight="1"
+                tools:text="339 West market St. Gurnee, IL"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/tvContact"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="98795 80768"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="May 13, 2022"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_price" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="$800/per week"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_user" />
+
+                <TextView
+                    android:id="@+id/tvPracticeName"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="Janna Garden"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDummyBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_8sdp" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context=".activities.professional.ProfessionalSignUpActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:background="@drawable/shape_rect_bottom"
+        android:paddingVertical="@dimen/_8sdp"
+        tools:itemCount="3"
+        tools:listitem="@layout/row_professional_availability_item" />
+</LinearLayout>

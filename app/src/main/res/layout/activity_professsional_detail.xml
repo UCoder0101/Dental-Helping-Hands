@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context=".activities.professional.ProfessionalDetailActivity">
+
+    <include
+        android:id="@+id/ilToolBar"
+        layout="@layout/content_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:elevation="@dimen/_1sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_2"
+                app:riv_corner_radius="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_professional_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvProfessional"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="Dentist"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_address_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvOfficeAddress"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="North Augusta, SC"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_phone_number_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="88950 89789"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_type_of_practice_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvTypePractice"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="General"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_dental_software_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvDentalSoftware"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="Saas"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_average_patients_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvAveragePatient"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="20"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_time_per_patients_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvTimePerPatient"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="55 Mins"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_start_time_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="08:00 AM"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_end_time_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvEndTime"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="05:00 PM"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_lunch_time_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvLunchTime"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="01:00 PM to 01:45 PM"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_price_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:text="$400/per week"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbl_post_added_time_column"
+                    android:textColor="@color/colorTextKeppel"
+                    app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                <TextView
+                    android:id="@+id/tvPostAddedTime"
+                    style="@style/MyTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    tools:text="04 mins ago"
+                    app:fontFamily="@font/font_medium_montserrat" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnApply"
+                style="@style/MyButtonStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/btn_apply" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

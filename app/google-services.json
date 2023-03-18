@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196449193752",
+    "project_id": "dental-helping-hands",
+    "storage_bucket": "dental-helping-hands.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196449193752:android:4bdc68672555f3ca09d86d",
+        "android_client_info": {
+          "package_name": "com.dentalhelpinghands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196449193752-ldqsd6ueif003bcgr7p4nqf1fl0kl4bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPwqSIYXiOtfIZDa-G32Yb5CAgCl__jkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196449193752-ldqsd6ueif003bcgr7p4nqf1fl0kl4bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

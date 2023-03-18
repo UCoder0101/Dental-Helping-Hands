@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical"
+    tools:context=".activities.office.OfficePostJobActivity">
+
+    <include
+        android:id="@+id/ilToolBar"
+        layout="@layout/content_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/lbl_practice_name_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etPracticeName"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="name"
+                android:hint="@string/hint_enter_practice_name"
+                android:inputType="textCapWords"
+                android:maxLength="@integer/max_length_name"
+                android:nextFocusForward="@id/etWebAddress" />
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_professional_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/shape_rect_edittext_un_focus"
+                android:elevation="@dimen/_1sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/llProfessional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etProfessional"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:elevation="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_professional"
+                        android:importantForAutofill="no" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription,NewApi" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spProfessional"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_web_address"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etWebAddress"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:hint="@string/hint_enter_web_address"
+                android:importantForAutofill="no"
+                android:inputType="textWebEmailAddress"
+                android:maxLength="@integer/max_length_email"
+                android:nextFocusForward="@id/etPhoneNumber" />
+
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_phone_number_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="phone"
+                android:hint="@string/hint_enter_phone_number"
+                android:inputType="number"
+                android:maxLength="@integer/max_length_phone"
+                android:nextFocusForward="@id/etDentalSoftware" />
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_type_of_practice_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/shape_rect_edittext_un_focus"
+                android:elevation="@dimen/_1sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/llTypeOfPractice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                        <EditText
+                        android:id="@+id/etTypeOfPractice"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:elevation="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_type_of_practice"
+                        android:importantForAutofill="no" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription,NewApi" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spTypeOfPractice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_dental_software"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etDentalSoftware"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:hint="@string/hint_enter_dental_software"
+                android:importantForAutofill="no"
+                android:maxLength="@integer/max_length_other"
+                android:nextFocusForward="@id/etTimePerPatients" />
+
+            <!--            <TextView-->
+            <!--                style="@style/MyTextViewStyle"-->
+            <!--                android:layout_marginTop="@dimen/_16sdp"-->
+            <!--                android:text="@string/lbl_average_patients_"-->
+            <!--                app:fontFamily="@font/font_semi_bold_montserrat" />-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_6sdp"-->
+            <!--                android:background="@drawable/shape_rect_edittext_un_focus"-->
+            <!--                android:elevation="@dimen/_1sdp">-->
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/llAveragePatients"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:gravity="center_vertical"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/etAveragePatients"-->
+            <!--                        style="@style/MyEditTextStyle"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@null"-->
+            <!--                        android:elevation="0dp"-->
+            <!--                        android:focusable="false"-->
+            <!--                        android:focusableInTouchMode="false"-->
+            <!--                        android:hint="@string/select_no_of_patients" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="@dimen/_20sdp"-->
+            <!--                        android:layout_height="@dimen/_20sdp"-->
+            <!--                        android:layout_marginStart="@dimen/_8sdp"-->
+            <!--                        android:layout_marginEnd="@dimen/_12sdp"-->
+            <!--                        android:padding="@dimen/_4sdp"-->
+            <!--                        android:src="@drawable/ic_arrow_down"-->
+            <!--                        android:visibility="visible"-->
+            <!--                        tools:ignore="ContentDescription,NewApi" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/spAveragePatients"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:background="@null"-->
+            <!--                    android:visibility="visible" />-->
+            <!--            </RelativeLayout>-->
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_time_per_patients_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etTimePerPatients"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:hint="@string/hint_enter_time_per_patients"
+                android:importantForAutofill="no"
+                android:maxLength="@integer/max_length_other"
+                android:nextFocusForward="@id/etOfficeAddress" />
+
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_office_address_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etOfficeAddress"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:hint="@string/hint_enter_office_address"
+                android:importantForAutofill="no"
+                android:maxLength="@integer/max_length_other"
+                android:nextFocusForward="@id/etPrice" />
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_start_time_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/shape_rect_edittext_un_focus"
+                android:elevation="@dimen/_1sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/llStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etStartTime"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:elevation="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_hour_slots"
+                        android:importantForAutofill="no" />
+
+                    <ImageView
+                        android:id="@+id/ivStartTimeArrow"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription,NewApi" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_end_time_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/shape_rect_edittext_un_focus"
+                android:elevation="@dimen/_1sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/llEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etEndTime"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:elevation="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_hour_slots"
+                        android:importantForAutofill="no" />
+
+                    <ImageView
+                        android:id="@+id/ivEndTimeArrow"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription,NewApi" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MyTextViewStyle"
+                        android:text="@string/lbl_lunch_time_start_"
+                        android:textSize="@dimen/_13ssp"
+                        app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/shape_rect_edittext_un_focus"
+                        android:elevation="@dimen/_1sdp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llLunchTimeStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <!--<TextView
+                                android:id="@+id/etLunchTimeStart"
+                                style="@style/MyEditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:elevation="0dp"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:importantForAutofill="no"
+                                android:text="01:00 PM" />-->
+
+                            <EditText
+                                android:id="@+id/etLunchTimeStart"
+                                style="@style/MyEditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:elevation="0dp"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:importantForAutofill="no" />
+
+                            <ImageView
+                                android:id="@+id/ivLunchTimeStartArrow"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="visible"
+                                tools:ignore="ContentDescription,NewApi" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/spLunchTimeStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@null"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MyTextViewStyle"
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="invisible"
+                        app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                    <TextView
+                        style="@style/MyTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_weight="1"
+                        android:text="@string/lbl_to"
+                        android:textSize="@dimen/_12ssp"
+                        app:fontFamily="@font/font_semi_bold_montserrat" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MyTextViewStyle"
+                        android:text="@string/lbl_lunch_time_end_"
+                        android:textSize="@dimen/_13ssp"
+                        app:fontFamily="@font/font_semi_bold_montserrat" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:background="@drawable/shape_rect_edittext_un_focus"
+                        android:elevation="@dimen/_1sdp">
+
+
+                        <LinearLayout
+                            android:id="@+id/llLunchTimeEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <!--<TextView
+                                android:id="@+id/etLunchTimeEnd"
+                                style="@style/MyEditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:elevation="0dp"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:importantForAutofill="no"
+                                android:text="01:45 PM" />-->
+
+                            <EditText
+                                android:id="@+id/etLunchTimeEnd"
+                                style="@style/MyEditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:elevation="0dp"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:importantForAutofill="no" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="visible"
+                                tools:ignore="ContentDescription,NewApi" />
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/spLunchTimeEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@null"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_price_type_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/shape_rect_edittext_un_focus"
+                android:elevation="@dimen/_1sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/llPriceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPriceType"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:elevation="0dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_price_type"
+                        android:importantForAutofill="no" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:visibility="visible"
+                        tools:ignore="ContentDescription,NewApi" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spPriceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@null"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MyTextViewStyle"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_price_"
+                app:fontFamily="@font/font_semi_bold_montserrat" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                style="@style/MyEditTextStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:hint="@string/hint_enter_price"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="@integer/max_length_price"
+                android:nextFocusForward="@id/etPracticeAddress" />
+
+            <Button
+                android:id="@+id/btnPost"
+                style="@style/MyButtonStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/btn_post" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
